@@ -1,0 +1,48 @@
+.skills{
+    background-color: var(--third-gradient);
+}
+
+.skills__constainer{
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 70px;
+}
+
+.skills__titles{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+
+}
+
+.skills__name{
+    font-size: var(--h1-font-size);
+}
+
+.skills__number{
+    color: var(--title-color);
+    font-weight: 700;
+}
+
+.skills__number span{
+    color: var(--primary-color);
+}
+
+.skills__description{
+    margin-bottom: 30px;
+}
+
+.skills__bar,
+.skills__percentage{
+    height: 2px;
+}
+
+.skills__bar{
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.skills__percentage{
+    display: block;
+    background-color: var(--primary-color);
+}
+
