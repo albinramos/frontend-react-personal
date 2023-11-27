@@ -103,7 +103,7 @@ export const projects = [
     {
         id:4,
         img: Project4,
-        category: 'Website',
+        category: 'Company Website',
         title: 'Ejemplo',
         description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
     }

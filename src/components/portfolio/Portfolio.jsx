@@ -3,6 +3,7 @@ import List from './List';
 import Items from './Items';
 import {projects} from '../../Data';
 import './portfolio.css';
+import { FaRegFileArchive } from 'react-icons/fa';
 
 const allNavList = ['all', ...new Set (projects.map((project) => project.category))];
 console.log(allNavList)
