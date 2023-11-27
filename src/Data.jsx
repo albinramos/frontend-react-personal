@@ -108,3 +108,55 @@ export const projects = [
         description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
     }
 ]
+
+    export const cv = [
+        {
+            id:1,
+            title: 'The bridge Bootcamp',
+            subtitle: 'Full Stack Programming',
+            date: '2023 - 2024',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+            category: 'education',
+        },
+        {
+            id:2,
+            title: 'Desarrollo Aplicaciones Web',
+            subtitle: 'Full Stack Programming',
+            date: '2023',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+            category: 'education',
+        },
+        {
+            id:3,
+            title: 'Marketing Digital 2.0',
+            subtitle: 'SEO & Digital Marketing',
+            date: '2023',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+            category: 'education',
+        },{
+            id:4,
+            title: 'The bridge Bootcamp',
+            subtitle: 'Full Stack Programming',
+            date: '2023 - 2024',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+            category: 'experience',
+        },
+        {
+            id:5,
+            title: 'Desarrollo Aplicaciones Web',
+            subtitle: 'Full Stack Programming',
+            date: '2023',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+            category: 'experience',
+        },
+        {
+            id:6,
+            title: 'Marketing Digital 2.0',
+            subtitle: 'SEO & Digital Marketing',
+            date: '2023',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+            category: 'experience',
+        },
+
+    
+    ]
