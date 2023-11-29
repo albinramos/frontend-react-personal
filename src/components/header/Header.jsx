@@ -4,9 +4,14 @@ import { FaFacebook, FaInstagram, FaBehance } from "react-icons/fa";
 import {BsSun, BsMoon} from 'react-icons/bs';
 import './header.css';
 import { useEffect } from 'react';
+import {Link} from 'react-scroll';
+import { animateScroll } from 'react-scroll';
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
+  const scrollTop = () => {
+    animateScroll.scrollToTop();
+  };
 
   useEffect(() => {
     document.body.classList.toggle('no-scroll', showMenu);
@@ -15,7 +20,7 @@ const Header = () => {
   return(
     <header className="header">
       <nav className="nav">
-        <a href="" className="nav__logo text-cs">Ramos</a>
+        <Link to='/' onClick={scrollTop} href="" className="nav__logo text-cs">Ramos</Link>
 
         <div className={`${showMenu ? 'nav__menu show-menu' : 'nav__menu'}`}>
           <div className="nav__Data">
@@ -24,7 +29,19 @@ const Header = () => {
               {links.map(({ name, path}, index) => {
                 return(
                   <li className="nav__item" key={index}>
-                    <a href="" className="nav__link text-cs">{name}</a>
+                    <Link
+                    className="nav__link text-cs"
+                    to={path}
+                    spy={true}
+                    smooth={true}
+                    hashSpy={true}
+                    offset={-100}
+                    duration={500}
+                    //hace que desaraezca el menu al hacer click
+                    onClick={() => setShowMenu(!showMenu)}
+                  >
+                    {name}
+                  </Link>
                   </li>
                 );
               })}
