@@ -3,16 +3,21 @@ import {links} from "../../Data";
 import { FaFacebook, FaInstagram, FaBehance } from "react-icons/fa";
 import {BsSun, BsMoon} from 'react-icons/bs';
 import './header.css';
+import { useEffect } from 'react';
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
-  
+
+  useEffect(() => {
+    document.body.classList.toggle('no-scroll', showMenu);
+  }, [showMenu]);
+
   return(
     <header className="header">
       <nav className="nav">
         <a href="" className="nav__logo text-cs">Ramos</a>
 
-        <div className="nav__menu">
+        <div className={`${showMenu ? 'nav__menu show-menu' : 'nav__menu'}`}>
           <div className="nav__Data">
             <div className="nav__data">
             <ul className="nav__list">
@@ -44,7 +49,7 @@ const Header = () => {
           <div className="theme__toggler">
             <BsSun />
           </div>
-          <div className="nav__toggle">
+          <div className={`${showMenu ? 'nav__toggle animate-toggle' : 'nav__toggle'}`} onClick={() => setShowMenu(!showMenu)}>
               <span></span>
               <span></span>
             </div> 
