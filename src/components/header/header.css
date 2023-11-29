@@ -12,7 +12,7 @@
   animation: header_animate 0.8s var(--transition) 0s forwards;
 }
 
-@keyframes header_animate {
+@keyframes header_animate  {
   0%{
     transform: translateY(-100%);
   }

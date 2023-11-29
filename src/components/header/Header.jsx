@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import {links} from "../../Data";
 import { FaFacebook, FaInstagram, FaBehance } from "react-icons/fa";
 import {BsSun, BsMoon} from 'react-icons/bs';
+import '../../App.css';
 import './header.css';
 import { useEffect } from 'react';
 import {Link} from 'react-scroll';
@@ -10,6 +11,7 @@ import { animateScroll } from 'react-scroll';
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
   const [scrollNav, setScrollNav] = useState(false);
+  const [theme, setTheme] = useState('dark-theme');
 
   const scrollTop = () => {
     animateScroll.scrollToTop();
@@ -23,6 +25,14 @@ const Header = () => {
     }
   };
 
+  const toggleTheme = () => {
+    if(theme === 'light-theme') {
+      setTheme('dark-theme')
+    } else {
+      setTheme('light-theme')
+    }
+  }
+
   useEffect(() => {
     window.addEventListener('scroll', changeNav);
   }, []);
@@ -30,6 +40,10 @@ const Header = () => {
   useEffect(() => {
     document.body.classList.toggle('no-scroll', showMenu);
   }, [showMenu]);
+
+  useEffect(() => {
+    document.documentElement.className = theme;}, [theme]);
+
 
   return(
     <header className={`${scrollNav ? 'scroll-header' : ''} header`} >
@@ -77,7 +91,7 @@ const Header = () => {
           </div>
         </div>
         <div className="nav__btns">
-          <div className="theme__toggler">
+          <div className="theme__toggler" onClick={toggleTheme}>
             <BsSun />
           </div>
           <div className={`${showMenu ? 'nav__toggle animate-toggle' : 'nav__toggle'}`} onClick={() => setShowMenu(!showMenu)}>

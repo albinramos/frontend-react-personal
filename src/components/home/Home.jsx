@@ -69,9 +69,7 @@ const Home = () => {
                 <a href="" className="btn">
                     Download CV
                 </a>
-                <a href="" className="hero__link text-cs">
-                    My Skills
-                </a>
+
             </div>
             </div>
         </div>
