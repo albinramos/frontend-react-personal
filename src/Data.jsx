@@ -4,6 +4,33 @@ import Project2 from './assets/project2.png';
 import Project3 from './assets/project3.png';
 import Project4 from './assets/project4.png';
 
+export const links = [
+    {
+        name: 'Home',
+        path:'home'
+    },
+    {
+        name: 'Services',
+        path:'services'
+    },
+    {
+        name: 'Skills',
+        path:'skills'
+    },
+    {
+        name: 'Portfolio',
+        path:'portfolio'
+    },
+    {
+        name: 'Resume',
+        path:'resume'
+    },
+    {
+        name: 'Contact',
+        path:'contact'
+    },
+]
+
 
 
 export const services = [
