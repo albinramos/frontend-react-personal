@@ -45,10 +45,11 @@
 .portfolio__img-wrapper{
     border-radius: 18px;
     overflow: hidden;
+
 }
 
 .portfolio__img{
-    height: 240px;
+    /* height: 240px; */
     width: 100%;
     object-fit: cover;
     vertical-align: middle;
@@ -86,6 +87,15 @@
         margin: auto;
         height: 100%;
       }
+
+      .portfolio__list{
+        display: flex;
+        justify-content: center;
+        column-gap: 10px;
+        margin-bottom: 60px;
+        display: flex;
+        flex-direction: column;
+    }
   }
 
   @media only screen and (min-width: 768px) {
@@ -101,6 +111,8 @@
         margin-bottom: 20px; /* Ajusta el espacio entre las filas según sea necesario */
         margin: auto;
       }
+
+
   }
 
   @media only screen and (min-width: 1024px){

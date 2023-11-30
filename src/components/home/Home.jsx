@@ -1,11 +1,9 @@
 import React from "react";
 import profileImg from "../../assets/Happy-Person-PNG-Picture.png";
-import shapeOne from '../../assets/shape-1.png';
-import shapeTwo from '../../assets/shape-2.png';
 
 import './home.css';
 
-import { FaFacebook, FaInstagram, FaBehance } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 
 const Home = () => {
@@ -42,7 +40,7 @@ const Home = () => {
                 <FaFacebook />
                 </a>
                 <a href='' className="home__social-link">
-                <FaBehance />
+                <FaLinkedin />
                 </a>
             </div>
             <div className="home__btns">

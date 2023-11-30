@@ -33,6 +33,10 @@
     position: relative;
 }
 
+.swiper-pagination-bullet-active{
+    background-color: #2AA384;
+}
+
 /* .swiper-horizontal> .swiper-pagination-bullets::before{
     content: '';
     position: absolute;

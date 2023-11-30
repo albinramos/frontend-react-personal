@@ -22,10 +22,6 @@ export const links = [
         path:'portfolio'
     },
     {
-        name: 'Resume',
-        path:'resume'
-    },
-    {
         name: 'Contact',
         path:'contact'
     },
@@ -38,31 +34,19 @@ export const services = [
         id:1,
         name: 'Web Development',
         titel: 'Web Design & Log',
-        description: 'Wed designers craft the overall vision & plan for a website layout. Professional logo development: Business, Company or Personal.'
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
     },
     {
         id:2,
         name: 'Apps Dvelopment',
         title: 'iOS & Android',
-        description: 'Design Software applications to run on mobile devices. Modern and mobile-ready application that will help you reach all of your marketing.'
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
     },
     {
         id:3,
         name:'Game Development',
-        description:'Creating games & describes the design, development and release of a game. Developing unique mobile android and ios games.'
-    },
-    {
-        id:4,
-        name:'Advertising',
-        title:'Google Ads',
-        description: 'Advertising services include: Google search result pages, gmails, Youtube and other webiste participated in Google Ads program.'
-    },
-    {
-        id:5,
-        name: 'Music Writing',
-        title: 'Sound Track',
-        description: 'Music copying, writing, creating, transcription and composition services.'
-    },
+        description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+    }
 ];
 
 export const skills = [
