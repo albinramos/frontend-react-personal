@@ -11,8 +11,8 @@ import { animateScroll } from 'react-scroll';
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
   const [scrollNav, setScrollNav] = useState(false);
-  const [theme, setTheme] = useState('dark-theme');
-
+  const [theme, setTheme] = useState('light-theme');
+  console.log('Current theme:', theme);
   const scrollTop = () => {
     animateScroll.scrollToTop();
   };
@@ -42,13 +42,14 @@ const Header = () => {
   }, [showMenu]);
 
   useEffect(() => {
+    console.log('Theme updated:', theme);
     document.documentElement.className = theme;}, [theme]);
 
 
   return(
     <header className={`${scrollNav ? 'scroll-header' : ''} header`} >
       <nav className="nav">
-        <Link to='/' onClick={scrollTop} href="" className="nav__logo text-cs">Ramos</Link>
+        <Link to='/' onClick={scrollTop} href="" className="nav__logo text-cs">Home</Link>
 
         <div className={`${showMenu ? 'nav__menu show-menu' : 'nav__menu'}`}>
           <div className="nav__Data">

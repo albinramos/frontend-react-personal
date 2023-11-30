@@ -28,31 +28,11 @@ const Home = () => {
                     <img src={profileImg} alt="profile img" className="home__profile" />
                 </div>
 
-                <p className="home__data home__data-one">
-                    <span className="text-lg">
-                        12<b>+</b>
-                    </span>
-                    <span className="text-sm text-cs">
-                        Years of <span>Experience</span>
-                    </span>
-                </p>
-
-                <p className="home__data home__data-two">
-                    <span className="text-lg">
-                        330
-                    </span>
-                    <span className="text-sm text-cs">
-                        Completed<br>
-                        </br><span>
-                            Projects</span>
-                    </span>
-                </p>
-                 <img src={shapeOne} alt="shape one" className="shape shape__1" />
-                 <img src={shapeTwo} alt="shape two" className="shape shape__2" />
+                
             </div>
 
             <p className="home__text">
-                From Bilbao. I am a junior web designer. I would like to talk to you.
+                From Bilbao. I am a junior web designer.<br></br> I would like to talk to you.
             </p>
             <div className="home__socials">
                 <a href='' className="home__social-link">

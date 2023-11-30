@@ -11,7 +11,7 @@ const Skills = () => {
             <p className='section__subtitle'>
                 My<span>Talent</span>
             </p>
-            <div className="skills__constainer container grid">
+            <div className="skills__container container grid">
                 {skills.map(({name, percentage, description}, index) => {
                     return (
                         <div className="skills__item" key={index}>

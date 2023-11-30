@@ -2,10 +2,18 @@
     background-color: var(--third-gradient);
 }
 
-.skills__constainer{
-    grid-template-columns: repeat(3, 1fr);
-    row-gap: 70px;
-}
+.skills__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Ajusta el espacio entre los elementos según sea necesario */
+  }
+  
+  .skills__item {
+    width: calc(30% - 20px); /* Ajusta el ancho según el número de elementos por fila y el espacio entre ellos */
+    box-sizing: border-box; /* Evita que el padding y el borde afecten el ancho real del elemento */
+    margin-bottom: 20px; /* Ajusta el espacio entre las filas según sea necesario */
+    margin: auto;
+  }
 
 .skills__titles{
     display: flex;
@@ -46,3 +54,8 @@
     background-color: var(--primary-color);
 }
 
+@media only screen and (max-width: 768px) {
+    .skills__item {
+      width: 80%; /* En dispositivos móviles, ocupa todo el ancho disponible */
+    }
+  }

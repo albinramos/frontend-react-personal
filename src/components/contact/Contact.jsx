@@ -52,21 +52,21 @@ const handleSubmit = (e) => {
                     <FaRegMap />
                   </span>
                   <h3 className="contact__card-title">Address</h3>
-                    <p className="contact__card-data">Solondota, 48600 Sopelana </p>
+                    <p className="contact__card-data">Bilbao, 45 48000 Bilbao </p>
                 </div>
                 <div className="contact__card">
                   <span className="contact__card-icon">
                     <FaRegUser />
                   </span>
                   <h3 className="contact__card-title">Freelance</h3>
-                    <p className="contact__card-data">Available Right Now </p>
+                    <p className="contact__card-data">Availabe for new projects</p>
                 </div>
                 <div className="contact__card">
                   <span className="contact__card-icon">
                     <FaRegEnvelope />
                   </span>
                   <h3 className="contact__card-title">Email</h3>
-                    <p className="contact__card-data">dramosh79@gmail.com </p>
+                    <p className="contact__card-data">david@mail.com </p>
                 </div>
                 <div className="contact__card">
                   <span className="contact__card-icon">

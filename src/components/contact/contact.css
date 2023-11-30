@@ -4,6 +4,9 @@
 
 .contact__container{
   grid-template-columns: 5fr 7fr;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contact__card{
@@ -93,4 +96,29 @@
   margin-top: 20px;
 }
 
+
+@media only screen and (max-width: 468px) {
+  .portfolio__items {
+      width: 80%; /* En dispositivos móviles, ocupa todo el ancho disponible */
+      margin: auto;
+      height: 100%;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+  .contact__container{
+    grid-template-columns: 5fr 7fr;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+  }
+
+  .contact__content{
+    margin: auto;
+  }
+
+  .contact__form{
+    margin: auto;
+  }
+}
 
