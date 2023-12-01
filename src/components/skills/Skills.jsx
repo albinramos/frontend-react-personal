@@ -6,10 +6,10 @@ const Skills = () => {
     return(
         <section className="skills section" id="skills">
             <h2 className="section__title text-cs">
-                Professional
+                Conocimientos
             </h2>
             <p className='section__subtitle'>
-                My<span>Talent</span>
+               
             </p>
             <div className="skills__container container grid">
                 {skills.map(({name, percentage, description}, index) => {

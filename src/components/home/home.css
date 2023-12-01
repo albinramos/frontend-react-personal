@@ -94,7 +94,7 @@
 }
 
 .home__banner{
-    background-color: var(--primary-color);
+    background-color: rgb(84, 150, 243);
     padding-bottom: 100%;
     border-radius: 50%;
     position: relative;
@@ -169,15 +169,6 @@
     right: 6%;
 }
 
-/* .shape__2{
-    width: 600px;
-    height: 600px;
-} */
-
-/* .shape__2{
-    bottom: -20%;
-    left: -30%;
-} */
 
 /* Estilos anteriores al @media */
 

@@ -37,10 +37,6 @@
     width: 40px;
 }
 
-.portfolio__container{
-    /* grid-template-columns: repeat(3, 1fr);
-    gap: 40px; */
-}
 
 .portfolio__img-wrapper{
     border-radius: 18px;
@@ -49,7 +45,6 @@
 }
 
 .portfolio__img{
-    /* height: 240px; */
     width: 100%;
     object-fit: cover;
     vertical-align: middle;
@@ -83,7 +78,7 @@
 
 @media only screen and (max-width: 468px) {
     .portfolio__items {
-        width: 80%; /* En dispositivos móviles, ocupa todo el ancho disponible */
+        width: 80%;
         margin: auto;
         height: 100%;
       }
@@ -102,13 +97,13 @@
     .portfolio__container {
         display: flex;
         flex-wrap: wrap;
-        gap: 20px; /* Ajusta el espacio entre los elementos según sea necesario */
+        gap: 20px; 
       }
       
       .portfolio__items {
-        width: calc(40% - 20px); /* Ajusta el ancho según el número de elementos por fila y el espacio entre ellos */
-        box-sizing: border-box; /* Evita que el padding y el borde afecten el ancho real del elemento */
-        margin-bottom: 20px; /* Ajusta el espacio entre las filas según sea necesario */
+        width: calc(40% - 20px); 
+        box-sizing: border-box; 
+        margin-bottom: 20px;
         margin: auto;
       }
 

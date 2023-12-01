@@ -1,14 +1,13 @@
 import React from 'react';
 import { services } from '../../Data';
 import { FaArrowRight } from "react-icons/fa";
-import shapeTwo from '../../assets/shape-2.png'; 
+
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-// import required modules
+
 import { Pagination } from 'swiper/modules';
 
 import './services.css';
@@ -17,10 +16,9 @@ const Services = () => {
     return(
        <section className="services section" id="services">
             <h2 className="section__title">
-                What I Do
+                Trabajos Desarrollados
             </h2>
             <p className='section__subtitle'>
-                My<span>Services</span>
             </p>
 
             <Swiper 
@@ -41,6 +39,8 @@ const Services = () => {
             spaceBetween: 40,
           },
         }}
+        /* Dentro del Swiper, se utiliza el método map para iterar sobre el array services y renderizar cada servicio como un SwiperSlide */
+        
         modules={[Pagination]} className="services__container container mySwiper">
                 {services.map(({name, title, description}, index) => {
                     return (
@@ -48,12 +48,6 @@ const Services = () => {
                             <span className="services__subtitle text-cs">{name}</span>
                             <h3 className="services__title">{title}</h3>
                             <p className="services__description">{description}</p>
-
-                            <a href="" className="link">
-                                See Pricing
-                                <FaArrowRight className='link__icon'></FaArrowRight>
-                            </a>
-                    
                         </SwiperSlide>
                     )
                 })}

@@ -1,14 +1,13 @@
 /* ------GOOGLE FONTS------ */
 
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100;200;300&family=Jost:wght@100;200;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;700&family=Josefin+Slab:wght@100;200;300&family=Jost:wght@100;200;300;400;500;700&display=swap');
 
 /*---CCS VARIABLES-----  */
 
-/* COLORS */
 :root{
   --primary-color: hsl(165,60%, 40%);
-  --title-color: hsl(0,0%, 100%);
-  --text-color: hsl(0,0%, 92%);
+  --title-color: #9f9fa0;
+  --text-color: #f1f1f1;
   --bg-color: hsl(216,18%,16%);
   --bg-color-alt: hsl(213,10%,21%);
   --container-color: hsl(217,18%,14%);
@@ -22,7 +21,7 @@
 
   /* TYPO */
 
-  --body-font: 'Jost' ,sans-serif;
+  --body-font: 'Comfortaa' ,sans-serif;
   --second-font: 'Josefin+Slab', sans-serif;
 
   --biggest-font-size: 90px;

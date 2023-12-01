@@ -37,23 +37,3 @@
     background-color: #2AA384;
 }
 
-/* .swiper-horizontal> .swiper-pagination-bullets::before{
-    content: '';
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(50%);
-    height: 2px;
-    width: 100%;
-    background-color: var(--title-color);
-} */
-
-/* .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{
-    border: 2px solid var(--title-color);
-    background-color: var(--container-color);
-    z-index: 1;
-    position: relative;
-    opacity: 1;
-} */
-
-

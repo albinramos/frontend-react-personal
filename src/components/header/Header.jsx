@@ -14,6 +14,8 @@ const Header = () => {
     animateScroll.scrollToTop();
   };
 
+  /* La función changeNav detecta el desplazamiento vertical (window.scrollY) y cambia el estado scrollNav dependiendo de si el desplazamiento es mayor o igual a 80 pixels. Esto se utiliza para aplicar estilos diferentes al encabezado cuando se desplaza hacia abajo. */
+
   const changeNav = () => {
     if(window.scrollY >= 80) {
       setScrollNav(true)
@@ -21,10 +23,14 @@ const Header = () => {
       setScrollNav(false)
     }
   };
+  
+  /* La función useEffect se utiliza para agregar un event listener al objeto window. Cuando el componente se monta, se llama a la función changeNav. */
 
   useEffect(() => {
     window.addEventListener('scroll', changeNav);
   }, []);
+
+  /* La función useEffect se utiliza para agregar y eliminar la clase 'no-scroll' del body cuando showMenu cambia. Esto evita que el usuario pueda desplazarse mientras el menú está abierto. */
 
   useEffect(() => {
     document.body.classList.toggle('no-scroll', showMenu);
@@ -47,10 +53,11 @@ const Header = () => {
                     to={path}
                     spy={true}
                     smooth={true}
+                    //hashSpy={true} es para mostrar o no en el navegador el #id
                     hashSpy={true}
                     offset={-100}
                     duration={500}
-                    //hace que desaraezca el menu al hacer click
+                    //hace que desaparezca el menu al hacer click
                     onClick={() => setShowMenu(!showMenu)}
                   >
                     {name}

@@ -23,6 +23,8 @@ const handleChange = (e) => {
 const handleSubmit = (e) => {
   e.preventDefault();
 
+  /* La función handleSubmit se llama cuando se envía el formulario. Utiliza Axios para realizar una solicitud POST a una API (en este caso, parece ser una hoja de cálculo de Google usando Sheet.best) con los datos del formulario. Luego, limpia los campos del formulario. */
+
   axios.post('https://sheet.best/api/sheets/a30496a3-b7af-47dc-9111-51c6d2b41732',
   form).then((response) => {
     console.log(response);
@@ -40,10 +42,10 @@ const handleSubmit = (e) => {
   return (
     <section className="contact section" id="contact">
       <h2 className="section__title text-cs">
-                Contact Me
+                Contacto
             </h2>
             <p className='section__subtitle'>
-                Let's<span>Talk About Projects</span>
+              <span></span>
             </p>
             <div className="contact__container container grid">
               <div className="contact__content">
@@ -51,16 +53,10 @@ const handleSubmit = (e) => {
                   <span className="contact__card-icon">
                     <FaRegMap />
                   </span>
-                  <h3 className="contact__card-title">Address</h3>
+                  <h3 className="contact__card-title">Dirección</h3>
                     <p className="contact__card-data">Bilbao, 45 48000 Bilbao </p>
                 </div>
-                <div className="contact__card">
-                  <span className="contact__card-icon">
-                    <FaRegUser />
-                  </span>
-                  <h3 className="contact__card-title">Freelance</h3>
-                    <p className="contact__card-data">Availabe for new projects</p>
-                </div>
+
                 <div className="contact__card">
                   <span className="contact__card-icon">
                     <FaRegEnvelope />
@@ -72,7 +68,7 @@ const handleSubmit = (e) => {
                   <span className="contact__card-icon">
                     <FaRegAddressBook />
                   </span>
-                  <h3 className="contact__card-title">Phone</h3>
+                  <h3 className="contact__card-title">Teléfono</h3>
                     <p className="contact__card-data">666 666 666 </p>
                 </div>
               </div>
@@ -80,7 +76,7 @@ const handleSubmit = (e) => {
             <form className="contact__form" onSubmit={handleSubmit}>
               <div className="contact__form-group grid">
                 <div className="contact__form-div">
-                  <label className="contact__form-tag text-cs">Full Name<b>*</b></label>
+                  <label className="contact__form-tag text-cs">Full Nombre<b>*</b></label>
                   <input type="text" name='name' onChange={handleChange} value={form.name} className="contact__form-input"/>
                 </div>
                 <div className="contact__form-div">
@@ -91,19 +87,19 @@ const handleSubmit = (e) => {
 
           
                 <div className="contact__form-div">
-                  <label className="contact__form-tag text-cs">Subject<b>*</b></label>
+                  <label className="contact__form-tag text-cs">Asunto<b>*</b></label>
                   <input type="text" name='subject' onChange={handleChange} value={form.subject} className="contact__form-input"/>
                 </div>
 
              
                 <div className="contact__form-div contact__form-area">
-                  <label className="contact__form-tag text-cs">Message<b>*</b></label>
+                  <label className="contact__form-tag text-cs">Mensaje<b>*</b></label>
                   <textarea name='message' onChange={handleChange} value={form.message} className="contact__form-input"></textarea>
                 </div>
             
               <div className="contact__submit">
-                <p>* Accept the terms and conditions.</p>
-                <button type='submit' className="btn text-cs">Send Message</button>
+                <p>* Acpto los términos y condiciones</p>
+                <button type='submit' className="btn text-cs">Enviar</button>
               </div>
             </form>
             </div>
