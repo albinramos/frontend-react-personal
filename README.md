@@ -1,8 +1,40 @@
-# React + Vite
+Bienvenido/a a mi Sitio Web Personal
+Este repositorio contiene el código fuente de mi sitio web personal. A continuación, encontrarás información sobre cómo configurar y ejecutar la aplicación localmente.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Instalación
+Antes de comenzar, asegúrate de tener Node.js instalado en tu sistema. Luego, sigue estos pasos:
 
-Currently, two official plugins are available:
+Clona este repositorio:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+git clone https://github.com/tu-usuario/nombre-de-tu-repo.git
+Ingresa al directorio del proyecto:
+
+
+cd nombre-de-tu-repo
+Instala las dependencias:
+
+
+npm install
+Ejecución
+Una vez que las dependencias están instaladas, puedes ejecutar la aplicación con el siguiente comando:
+
+npm run dev
+Esto iniciará el servidor de desarrollo y podrás acceder a la aplicación en http://localhost:3000.
+
+Estructura del Proyecto
+src/: Contiene el código fuente de la aplicación.
+public/: Contiene archivos estáticos como imágenes y hojas de estilo.
+data/: Directorio para almacenar los datos de Google Sheets.
+Funcionalidades
+Páginas Principales
+Home: Información introductoria sobre mí.
+Trabajos: Detalles sobre proyectos y experiencias laborales.
+Conocimientos: Lista de habilidades y conocimientos técnicos.
+Portafolio: Ejemplos específicos de proyectos en los que he trabajado.
+Contacto
+Contacto: Página para contactarme. Los datos enviados se almacenan en una hoja de cálculo de Google Sheets.
+Contacto
+¡Me encantaría recibir tu feedback! Si tienes preguntas o sugerencias, no dudes en contactarme a través de la página de contacto de mi sitio web.
+
+Gracias por visitar mi repositorio. ¡Espero que disfrutes explorando mi web personal!
