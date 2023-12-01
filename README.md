@@ -6,15 +6,12 @@ Este repositorio contiene el código fuente de mi sitio web personal. A continua
 
 Antes de comenzar, asegúrate de tener [Node.js](https://nodejs.org/) instalado en tu sistema. Luego, sigue estos pasos:
 
-```bash
 git clone https://github.com/tu-usuario/nombre-de-tu-repo.git
 cd nombre-de-tu-repo
 npm install
 Ejecución
 Una vez que las dependencias están instaladas, puedes ejecutar la aplicación con el siguiente comando:
 
-bash
-Copy code
 npm run dev
 Esto iniciará el servidor de desarrollo y podrás acceder a la aplicación en http://localhost:3000.
 
