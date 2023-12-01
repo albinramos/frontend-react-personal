@@ -18,19 +18,27 @@ Copy code
 npm run dev
 Esto iniciará el servidor de desarrollo y podrás acceder a la aplicación en http://localhost:3000.
 
-Estructura del Proyecto
-src/: Contiene el código fuente de la aplicación.
-public/: Contiene archivos estáticos como imágenes y hojas de estilo.
-data/: Directorio para almacenar los datos de Google Sheets.
-Funcionalidades
-Páginas Principales
-Home: Información introductoria sobre mí.
-Trabajos: Detalles sobre proyectos y experiencias laborales.
-Conocimientos: Lista de habilidades y conocimientos técnicos.
-Portafolio: Ejemplos específicos de proyectos en los que he trabajado.
-Contacto
-Contacto: Página para contactarme. Los datos enviados se almacenan en una hoja de cálculo de Google Sheets.
-Contacto
+# Estructura del Proyecto
+
+- **src/**: Contiene el código fuente de la aplicación.
+- **public/**: Contiene archivos estáticos como imágenes y hojas de estilo.
+- **data/**: Directorio para almacenar los datos de Google Sheets.
+
+# Funcionalidades
+
+## Páginas Principales
+
+- **Home**: Información introductoria sobre mí.
+- **Trabajos**: Detalles sobre proyectos y experiencias laborales.
+- **Conocimientos**: Lista de habilidades y conocimientos técnicos.
+- **Portafolio**: Ejemplos específicos de proyectos en los que he trabajado.
+
+## Contacto
+
+- **Contacto**: Página para contactarme. Los datos enviados se almacenan en una hoja de cálculo de Google Sheets.
+
+# Contacto
+
 ¡Me encantaría recibir tu feedback! Si tienes preguntas o sugerencias, no dudes en contactarme a través de la página de contacto de mi sitio web.
 
 Gracias por visitar mi repositorio. ¡Espero que disfrutes explorando mi web personal!
